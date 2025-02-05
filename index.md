@@ -186,11 +186,12 @@ special instructions.
   We are committed to making this workshop
   accessible to everybody. 
 {% if online == "false" %}
-  The workshop organizers have checked that:
+  The workshop takes place in a historic building that is only accessible via stairs.
+  Thus, unfortunately, the workshop location is not accessible by wheelchairs or scooters:
 <p>
   <ul>
-    <li>The room is wheelchair / scooter accessible.</li>
-    <li>Accessible restrooms are available.</li>
+    <li>The room is <strong>not</strong> wheelchair / scooter accessible.</li>
+    <li><strong>No</strong> accessible restrooms are available in the building.</li>
   </ul>
 {% endif %}
 </p>
