@@ -182,9 +182,7 @@ Modify the block below if there are any barriers to accessibility or
 special instructions.
 {% endcomment %}
 <p id="accessibility">
-  <strong>Accessibility:</strong>
-  We are committed to making this workshop
-  accessible to everybody. 
+  <strong>Beware: Limited accessibility:</strong>
 {% if online == "false" %}
   The workshop takes place in a historic building that is only accessible via stairs.
   Thus, unfortunately, the workshop location is not accessible by wheelchairs or scooters:
