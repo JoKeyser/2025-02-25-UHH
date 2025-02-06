@@ -65,15 +65,15 @@ the pitch.
 {% endcomment %}
 
 <p>
-<strong><a href="https://carpentries.org">The Carpentries</a></strong> project comprises the <a
-href="{{site.swc_site}}">Software Carpentry</a>, <a href="{{site.dc_site}}">Data Carpentry</a>, and
-<a href="{{site.lc_site}}">Library Carpentry</a> communities of Instructors, Trainers, Maintainers,
+<strong><a href="https://carpentries.org" target="_blank" rel="noopener">The Carpentries</a></strong> project comprises the <a
+href="{{site.swc_site}}" target="_blank" rel="noopener">Software Carpentry</a>, <a href="{{site.dc_site}}" target="_blank" rel="noopener">Data Carpentry</a>, and
+<a href="{{site.lc_site}}" target="_blank" rel="noopener">Library Carpentry</a> communities of Instructors, Trainers, Maintainers,
 helpers, and supporters who share a mission to teach foundational computational and data science
 skills to researchers.
 <p align="center">
   <em>
   <strong>Want to learn more and stay engaged with The Carpentries?</strong> Carpentries Clippings is The Carpentries' biweekly newsletter, where we share community news, community job postings, and more.
-Sign up to receive future editions and read our full archive: <a href="https://carpentries.org/newsletter/">https://carpentries.org/newsletter/</a>
+Sign up to receive future editions and read our full archive: <a href="https://carpentries.org/newsletter/" target="_blank" rel="noopener">https://carpentries.org/newsletter/</a>
   </em>
 </p>
 {% if site.carpentry == "swc" %}
@@ -123,12 +123,12 @@ address.
   <strong>Where:</strong>
   {{page.address}}.
   Get directions with
-  <a href="//www.openstreetmap.org/?mlat={{page.latitude}}&mlon={{page.longitude}}&zoom=16">OpenStreetMap</a>
+  <a href="//www.openstreetmap.org/?mlat={{page.latitude}}&mlon={{page.longitude}}&zoom=16" target="_blank" rel="noopener">OpenStreetMap</a>
   or
-  <a href="//maps.google.com/maps?q={{page.latitude}},{{page.longitude}}">Google Maps</a>.
+  <a href="//maps.google.com/maps?q={{page.latitude}},{{page.longitude}}" target="_blank" rel="noopener">Google Maps</a>.
   {% if page.what3words %}
     What3Words location:
-    <a href="https://what3words.com/{{page.what3words}}">///{{page.what3words}}</a>.
+    <a href="https://what3words.com/{{page.what3words}}" target="_blank" rel="noopener">///{{page.what3words}}</a>.
   {%endif %}
 </p>
 {% elsif online == "true_public" %}
@@ -198,11 +198,11 @@ special instructions.
   However, we do want to help create an inclusive, accessible experience for all participants. 
   We encourage you to share any information that would be helpful to make your Carpentries experience accessible.
   To request an accommodation for this workshop, please fill out the 
-  <a href="https://carpentries.typeform.com/to/B2OSYaD0">accommodation request form</a>.
+  <a href="https://carpentries.typeform.com/to/B2OSYaD0" target="_blank" rel="noopener">accommodation request form</a>.
   If you have questions or need assistance with the accommodation form please <a href="mailto:team@carpentries.org">email us</a>.
 </p>
 <p>
-  <a href="https://glosario.carpentries.org/">Glosario</a> is a multilingual glossary 
+  <a href="https://glosario.carpentries.org/" target="_blank" rel="noopener">Glosario</a> is a multilingual glossary 
   for computing and data science terms. The glossary helps 
   learners attend workshops and use our lessons to make sense of computational and programming jargon written in English by offering it 
   in their native language. Translating data science terms also provides a teaching tool for Carpentries Instructors to reduce barriers 
@@ -237,7 +237,7 @@ Display the contact email address set in the configuration file.
 <p id="roles">
   <strong>Roles:</strong>
   To learn more about the roles at the workshop (who will be doing what),
-  refer to <a href="https://carpentries.org/workshop_faq/#what-are-the-roles-of-everyone-participating-in-a-workshop">our Workshop FAQ</a>.
+  refer to <a href="https://carpentries.org/workshop_faq/#what-are-the-roles-of-everyone-participating-in-a-workshop" target="_blank" rel="noopener">our Workshop FAQ</a>.
 </p>
 
 {% comment %}
@@ -273,7 +273,7 @@ Everyone who participates in Carpentries activities is required to conform to th
 </p>
 
 <p class="text-center">
-  <a href="https://goo.gl/forms/KoUfO53Za3apOuOK2">
+  <a href="https://goo.gl/forms/KoUfO53Za3apOuOK2" target="_blank" rel="noopener">
     <button type="button" class="btn btn-info">Report a Code of Conduct Incident</button>
   </a>
 </p>
@@ -297,7 +297,7 @@ available at https://codimd.carpentries.org
 <h2 id="collaborative_notes">Collaborative Notes</h2>
 
 <p>
-We will use this <a href="{{ page.collaborative_notes }}">collaborative document</a> for chatting, taking notes, and sharing URLs and bits of code.
+We will use this <a href="{{ page.collaborative_notes }}" target="_blank" rel="noopener">collaborative document</a> for chatting, taking notes, and sharing URLs and bits of code.
 </p>
 <hr/>
 {% endif %}
@@ -309,8 +309,8 @@ SURVEYS - DO NOT EDIT SURVEY LINKS
 <h2 id="surveys">Surveys</h2>
 <p>Please be sure to complete these surveys before and after the workshop.</p>
 {% if site.carpentry == "incubator" %}
-<p><a href="{{ site.incubator_pre_survey }}">Pre-workshop Survey</a></p>
-<p><a href="{{ site.incubator_post_survey }}">Post-workshop Survey</a></p>
+<p><a href="{{ site.incubator_pre_survey }}" target="_blank" rel="noopener">Pre-workshop Survey</a></p>
+<p><a href="{{ site.incubator_post_survey }}" target="_blank" rel="noopener">Post-workshop Survey</a></p>
 {% elsif site.incubator_pre_survey or site.incubator_post_survey %}
 <div class="alert alert-danger">
 WARNING: you have defined custom pre- and/or post-survey links for
@@ -321,8 +321,8 @@ in `_config.yml` or, if this workshop is teaching a lesson in the Incubator,
 change the value of `carpentry` to `incubator`.
 </div>
 {% else %}
-<p><a href="{{ site.pre_survey }}{{ site.github.project_title }}">Pre-workshop Survey</a></p>
-<p><a href="{{ site.post_survey }}{{ site.github.project_title }}">Post-workshop Survey</a></p>
+<p><a href="{{ site.pre_survey }}{{ site.github.project_title }}" target="_blank" rel="noopener">Pre-workshop Survey</a></p>
+<p><a href="{{ site.post_survey }}{{ site.github.project_title }}" target="_blank" rel="noopener">Post-workshop Survey</a></p>
 {% endif %}
 
 <hr/>
@@ -360,7 +360,7 @@ of code below the Schedule `<h2>` header below with
 {% include lc/schedule.html %}
 {% elsif site.carpentry == "incubator" %}
 This workshop is teaching a lesson in 
-<a href="https://carpentries-incubator.org/">The Carpentries Incubator</a>. Please check <a href="{{site.incubator_lesson_site}}">the lesson homepage</a> for a list of lesson sections and estimated timings.
+<a href="https://carpentries-incubator.org/" target="_blank" rel="noopener">The Carpentries Incubator</a>. Please check <a href="{{site.incubator_lesson_site}}" target="_blank" rel="noopener">the lesson homepage</a> for a list of lesson sections and estimated timings.
 {% endif %}
 
 {% comment %}
@@ -406,7 +406,7 @@ please preview your site before committing, and make sure to run
 <p>
   We maintain a list of common issues that occur during installation as a reference for instructors
   that may be useful on the
-  <a href = "{{site.swc_github}}/workshop-template/wiki/Configuration-Problems-and-Solutions">Configuration Problems and Solutions wiki page</a>.
+  <a href = "{{site.swc_github}}/workshop-template/wiki/Configuration-Problems-and-Solutions" target="_blank" rel="noopener">Configuration Problems and Solutions wiki page</a>.
 </p>
 
 {% comment %}
@@ -436,6 +436,6 @@ during the workshop.
 {% include lc/setup.html %}
 {% elsif site.carpentry == "incubator" %}
 Please check the "Setup" page of
-<a href="{{site.incubator_lesson_site}}">the lesson homepage</a> for instructions to follow
+<a href="{{site.incubator_lesson_site}}" target="_blank" rel="noopener">the lesson homepage</a> for instructions to follow
 to obtain the software and data you will need to follow the lesson.
 {% endif %}
